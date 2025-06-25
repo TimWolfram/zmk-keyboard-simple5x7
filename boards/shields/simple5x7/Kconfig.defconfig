@@ -1,0 +1,31 @@
+if SHIELD_SIMPLE5X7_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_KEYBOARD_NAME
+    string "simple5x7"
+
+config USB_DEVICE_PRODUCT
+    default ZMK_KEYBOARD_NAME
+    
+config CONFIG_USB_DEVICE_MANUFACTURER	
+    string "Wolfram Designs"
+
+endif
+
+if SHIELD_SIMPLE5X7_LEFT || SHIELD_SIMPLE5X7_RIGHT
+
+config ZMK_SPLIT
+    default y
+    
+config ZMK_BLE
+    def_bool y
+    
+config SPI
+    default y
+
+config SETTINGS
+    def_bool n
+
+endif

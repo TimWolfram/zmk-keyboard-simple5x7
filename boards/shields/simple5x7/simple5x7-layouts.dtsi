@@ -1,0 +1,29 @@
+// Needed if and only if keys property is used
+#include <physical_layouts.dtsi>
+
+/ {
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        // keys = <...>; // List of key positions, optional
+    };
+
+    // layout_5x6: alt_layout {
+    //     compatible = "zmk,physical-layout";
+    //     display-name = "Alternate Layout";
+    //     transform = <&default_transform>;
+    //     kscan = <&kscan0>;
+    //     // keys = <...>; // List of key positions, optional
+    // }
+
+    // alt_layout: alt_layout {
+    //     compatible = "zmk,physical-layout";
+    //     display-name = "Alternate Layout";
+    //     transform = <&alt_transform>;
+    //     kscan = <&alt_kscan0>;
+    //     // keys = <...>; // List of key positions, optional
+    // };
+    
+};
