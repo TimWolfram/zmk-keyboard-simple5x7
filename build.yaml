@@ -1,12 +1,14 @@
 board: [ "nice_nano_v2" ]
-shield: [ "simple5x7_left", "simple5x7_right" ]
+shield: [ "test_left", "test_right" ]
 include:
   - board: nice_nano_v2
-    shield: simple5x7_left
+    shield: test_left
+  - board: nice_nano_v2
+    shield: test_right
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
 #     shield: reviung41
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: simple5x7_left_with_studio
-#
+#     snippet: studio-rpc-usb-uart
+#     cmake-args: -DCONFIG_ZMK_STUDIO=y
+#     artifact-name: simple5x7_left_with_studio
+# #
