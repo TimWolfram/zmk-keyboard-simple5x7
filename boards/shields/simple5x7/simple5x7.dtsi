@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-// #include <simple5x7-layouts.dtsi>
+#include <simple5x7-layouts.dtsi>
 
 // &simple5x7_layout {
 //     transform = <&default_transform>;
@@ -8,6 +8,7 @@
 / {
     chosen {
         zephyr,display = &oled;
+        zmk,physical-layout = &physical_layout0;
         zmk,kscan = &kscan0;
     };
 
